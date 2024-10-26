@@ -1,0 +1,39 @@
+{
+  "summaries": [
+    {
+      "date": "2024-10-21",
+      "avgTemp": "26.91",
+      "maxTemp": 29.99,
+      "minTemp": 22.95,
+      "dominantCondition": "Haze"
+    },
+    {
+      "date": "2024-10-22",
+      "avgTemp": "25.75",
+      "maxTemp": 29.99,
+      "minTemp": 21.78,
+      "dominantCondition": "Mist"
+    },
+    {
+      "date": "2024-10-23",
+      "avgTemp": "28.45",
+      "maxTemp": 31.99,
+      "minTemp": 25.32,
+      "dominantCondition": "Haze"
+    },
+    {
+      "date": "2024-10-25",
+      "avgTemp": "27.00",
+      "maxTemp": 30.99,
+      "minTemp": 23.33,
+      "dominantCondition": "Haze"
+    },
+    {
+      "date": "2024-10-26",
+      "avgTemp": "31.60",
+      "maxTemp": 34.76,
+      "minTemp": 27.12,
+      "dominantCondition": "Haze"
+    }
+  ]
+}
