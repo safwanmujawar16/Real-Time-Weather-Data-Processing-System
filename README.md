@@ -2,40 +2,10 @@
 
 <p>A real-time weather monitoring system that fetches, processes, and visualizes weather data from OpenWeatherMap API for multiple Indian cities. This system allows users to view the current weather, daily summaries, and receive alerts if the temperature exceeds a predefined threshold.</p>
 
-<h2>📂 Project Structure</h2>
-<pre>
-weather-monitoring-system/
-├── backend/
-│   ├── config/
-│   │   └── config.js
-│   ├── controllers/
-│   │   └── weatherController.js
-│   ├── routes/
-│   │   └── weatherRoutes.js
-│   ├── services/
-│   │   └── weatherService.js
-│   ├── data/
-│   │   └── weatherData.json
-│   ├── package.json
-│   └── server.js
-└── frontend/
-    ├── index.html
-    ├── styles.css
-    ├── script.js
-    └── chart.min.js
-</pre>
-
 <h2>💻 Tech Stack</h2>
 <p>This project is built using the following technologies:</p>
-<ul>
-  <li><img src="https://img.icons8.com/color/48/000000/html-5.png" width="20" /> <strong>HTML</strong></li>
-  <li><img src="https://img.icons8.com/color/48/000000/css3.png" width="20" /> <strong>CSS</strong></li>
-  <li><img src="https://img.icons8.com/color/48/000000/javascript.png" width="20" /> <strong>JavaScript</strong></li>
-  <li><img src="https://img.icons8.com/color/48/000000/nodejs.png" width="20" /> <strong>Node.js</strong></li>
-  <li><img src="https://img.icons8.com/color/48/000000/json.png" width="20" /> <strong>JSON (Data Storage)</strong></li>
-  <li><img src="https://img.icons8.com/color/48/000000/api.png" width="20" /> <strong>OpenWeatherMap API</strong></li>
-  <li><img src="https://img.icons8.com/color/48/000000/data-visualization.png" width="20" /> <strong>Chart.js</strong></li>
-</ul>
+
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,js,html,css)](https://skillicons.dev)
 
 <h2>📦 Dependencies</h2>
 <ul>
@@ -76,64 +46,44 @@ weather-monitoring-system/
       </li>
     </ul>
   </li>
-
-  <li><strong>Frontend Setup</strong>:
-    <ul>
-      <li>Open <code>index.html</code> in your browser to view the application interface.</li>
-    </ul>
-  </li>
 </ol>
 
 <h2>🚀 Execution Steps</h2>
 <ol>
   <li><strong>Start the Backend Server</strong>: Run the server using <code>npm start</code> inside the <code>backend</code> folder. The server should start on port 3001.</li>
-  <li><strong>Open Frontend in Browser</strong>: Open <code>index.html</code> in a browser to access the user interface.</li>
   <li><strong>View Data</strong>: Weather data for each city will load automatically and display in table format with a chart visualization.</li>
-</ol>
-
-<h2>👀 Output Running Steps</h2>
-<ol>
-  <li>On opening the frontend, the weather data for each city will load and display automatically in a table format.</li>
-  <li>A bar chart will visualize the temperatures across the selected cities.</li>
-  <li>When the temperature exceeds the alert threshold, a pop-up alert will notify the user in real time.</li>
 </ol>
 
 <h2>🌟 Features</h2>
 <ul>
-  <li><strong>Real-time Data Fetching</strong>: Retrieves weather data from OpenWeatherMap API for six cities in India.</li>
-  <li><strong>Daily Summaries</strong>: Calculates and stores daily summaries including average, maximum, and minimum temperature along with the dominant weather condition.</li>
-  <li><strong>Alerts</strong>: Displays a pop-up alert when the temperature exceeds a user-defined threshold.</li>
   <li><strong>Visualization</strong>: Uses Chart.js to visualize temperature data on a bar chart.</li>
+
+  ![Screenshot 2024-10-26 153126](https://github.com/user-attachments/assets/6610f539-2f88-4193-8caa-4ca414eac4c0)
+   
+     
+  <li><strong>Real-time Data Fetching</strong>: Retrieves weather data from OpenWeatherMap API for six cities in India.</li>
+    
+  ![Screenshot 2024-10-26 153058](https://github.com/user-attachments/assets/f610666d-6bda-40f8-bb5a-d0cda7f4213d)
+ 
+  <li><strong>Daily Summaries</strong>: Calculates and stores daily summaries including average, maximum, and minimum temperature along with the dominant weather condition.</li>
+
+ ```
+backend/data/weatherData.json
+{
+  "summaries": [
+    {
+      "date": "2024-10-26",
+      "avgTemp": "32.07",
+      "maxTemp": 34.99,
+      "minTemp": 27.18,
+      "dominantCondition": "Haze"
+    }
+    ]
+   }
+```
+  
+  <li><strong>Alerts</strong>: Displays a pop-up alert when the temperature exceeds a user-defined threshold.</li>
+
+![Screenshot 2024-10-26 155617](https://github.com/user-attachments/assets/30eee711-b0ab-456e-8cb2-34a204e1fc10)
+   
 </ul>
-
-<h2>📄 Example Code</h2>
-<p>Here’s a brief example of the code used to fetch and display weather data:</p>
-
-<pre>
-// script.js
-const displayWeatherData = (data) => {
-    const weatherDiv = document.getElementById('weatherData');
-    data.forEach(item => {
-        weatherDiv.innerHTML += `
-        &lt;table class="weather-table"&gt;
-            &lt;tr&gt;&lt;th&gt;${item.city}:&lt;/th&gt;&lt;/tr&gt;
-            &lt;tr&gt;&lt;td&gt;${item.temp}&lt;/td&gt;&lt;/tr&gt;
-        &lt;/table&gt;`;
-    });
-};
-</pre>
-
-<h2>🖼️ Screenshots</h2>
-<table>
-  <tr>
-    <th>Weather Data Display</th>
-    <th>Chart Visualization</th>
-  </tr>
-  <tr>
-    <td><img src="screenshots/weather_table.png" alt="Weather Table"></td>
-    <td><img src="screenshots/weather_chart.png" alt="Weather Chart"></td>
-  </tr>
-</table>
-
-<h2>📜 License</h2>
-<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
