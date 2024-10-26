@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather Monitoring System</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="chart.min.js"></script>
+</head>
+<body>
+    <!-- Threshold Input --> 
+        <h1 style="text-align: center;">⛅Weather Monitoring System</h1>   
+        <div class="text" 
+            style="display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;">   
+            <div class="alignment">
+                <label for="thresholdInput">Set Alert Temperature Threshold (°C):</label>
+                <input type="number" id="thresholdInput">
+                <button id="setThreshold">Set Threshold</button>
+            </div>
+        </div>
+        
+    <!-- <lottie-player src="https://lottie.host/ba38700d-ae4d-4b01-9117-741765290192/cEERudQMEe.json" background="##ffffff" speed="1" 
+    style="width: 50%; height: 50%; z-index: -1;display: contents; justify-content: center;" mode="normal" loop autoplay>
+    </lottie-player> -->
+
+        <canvas id="weatherChart" width="400" height="200"></canvas>
+        <div id="weatherData"></div>
+        <!-- <button id="fetchWeather">Fetch Weather</button> -->
+    <script src="script.js"></script> 
+</body>
+</html> 

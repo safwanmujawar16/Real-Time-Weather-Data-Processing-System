@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    background-image: url('pic/body-pic.gif');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+}
+
+#weatherData {
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cyan;
+    color: black;
+}
+
+#weatherData .table{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #ffffff;
+    display: flex;
+    width: 25rem;
+    font-size: 20px;
+    flex-direction: column;
+    font-style: italic;
+}
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
