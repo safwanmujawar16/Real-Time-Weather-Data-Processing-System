@@ -1,8 +1,8 @@
-<h1>Real-Time Weather Monitoring System</h1>
+<h1>🌦️ Real-Time Weather Monitoring System</h1>
 
 <p>A real-time weather monitoring system that fetches, processes, and visualizes weather data from OpenWeatherMap API for multiple Indian cities. This system allows users to view the current weather, daily summaries, and receive alerts if the temperature exceeds a predefined threshold.</p>
 
-<h2>Project Structure</h2>
+<h2>📂 Project Structure</h2>
 <pre>
 weather-monitoring-system/
 ├── backend/
@@ -25,15 +25,19 @@ weather-monitoring-system/
     └── chart.min.js
 </pre>
 
-<h2>Tech Stack</h2>
+<h2>💻 Tech Stack</h2>
+<p>This project is built using the following technologies:</p>
 <ul>
-  <li><strong>Frontend</strong>: HTML, CSS, JavaScript, Chart.js</li>
-  <li><strong>Backend</strong>: Node.js, Express.js</li>
-  <li><strong>Database</strong>: JSON file (for persistent storage of daily summaries)</li>
-  <li><strong>API</strong>: OpenWeatherMap API for weather data</li>
+  <li><img src="https://img.icons8.com/color/48/000000/html-5.png" width="20" /> <strong>HTML</strong></li>
+  <li><img src="https://img.icons8.com/color/48/000000/css3.png" width="20" /> <strong>CSS</strong></li>
+  <li><img src="https://img.icons8.com/color/48/000000/javascript.png" width="20" /> <strong>JavaScript</strong></li>
+  <li><img src="https://img.icons8.com/color/48/000000/nodejs.png" width="20" /> <strong>Node.js</strong></li>
+  <li><img src="https://img.icons8.com/color/48/000000/json.png" width="20" /> <strong>JSON (Data Storage)</strong></li>
+  <li><img src="https://img.icons8.com/color/48/000000/api.png" width="20" /> <strong>OpenWeatherMap API</strong></li>
+  <li><img src="https://img.icons8.com/color/48/000000/data-visualization.png" width="20" /> <strong>Chart.js</strong></li>
 </ul>
 
-<h2>Dependencies</h2>
+<h2>📦 Dependencies</h2>
 <ul>
   <li><strong>axios</strong>: For making HTTP requests to the OpenWeatherMap API</li>
   <li><strong>express</strong>: Backend server framework</li>
@@ -42,7 +46,7 @@ weather-monitoring-system/
   <li><strong>chart.js</strong>: For displaying weather data charts on the frontend</li>
 </ul>
 
-<h2>Setup and Installation</h2>
+<h2>⚙️ Setup and Installation</h2>
 <ol>
   <li><strong>Clone the repository</strong>:
     <pre>
@@ -80,22 +84,21 @@ weather-monitoring-system/
   </li>
 </ol>
 
-<h2>Execution Steps</h2>
+<h2>🚀 Execution Steps</h2>
 <ol>
   <li><strong>Start the Backend Server</strong>: Run the server using <code>npm start</code> inside the <code>backend</code> folder. The server should start on port 3001.</li>
   <li><strong>Open Frontend in Browser</strong>: Open <code>index.html</code> in a browser to access the user interface.</li>
-  <li><strong>Fetch Data</strong>: Click the <strong>Fetch Weather Data</strong> button to retrieve weather data and view visualizations.</li>
+  <li><strong>View Data</strong>: Weather data for each city will load automatically and display in table format with a chart visualization.</li>
 </ol>
 
-<h2>Output Running Steps</h2>
+<h2>👀 Output Running Steps</h2>
 <ol>
-  <li>Click on the <strong>Fetch Weather Data</strong> button in the browser.</li>
-  <li>The current weather data for each city will be displayed in a table format on the interface.</li>
-  <li>A bar chart will be generated showing the temperatures across the selected cities.</li>
-  <li>When temperature exceeds the alert threshold, a pop-up alert will be shown.</li>
+  <li>On opening the frontend, the weather data for each city will load and display automatically in a table format.</li>
+  <li>A bar chart will visualize the temperatures across the selected cities.</li>
+  <li>When the temperature exceeds the alert threshold, a pop-up alert will notify the user in real time.</li>
 </ol>
 
-<h2>Features</h2>
+<h2>🌟 Features</h2>
 <ul>
   <li><strong>Real-time Data Fetching</strong>: Retrieves weather data from OpenWeatherMap API for six cities in India.</li>
   <li><strong>Daily Summaries</strong>: Calculates and stores daily summaries including average, maximum, and minimum temperature along with the dominant weather condition.</li>
@@ -103,35 +106,11 @@ weather-monitoring-system/
   <li><strong>Visualization</strong>: Uses Chart.js to visualize temperature data on a bar chart.</li>
 </ul>
 
-<h2>Code Highlights</h2>
-<ul>
-  <li><strong>Backend</strong>:
-    <ul>
-      <li><code>weatherService.js</code>: Fetches data from OpenWeatherMap API.</li>
-      <li><code>weatherController.js</code>: Processes and stores weather data, calculates daily summaries.</li>
-      <li><code>config.js</code>: Stores configuration settings, including API URLs and intervals.</li>
-    </ul>
-  </li>
-  <li><strong>Frontend</strong>:
-    <ul>
-      <li><code>script.js</code>: Manages data display and alert thresholds, updates the chart.</li>
-      <li><code>styles.css</code>: Contains the style for data tables and chart.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2>Example Code</h2>
+<h2>📄 Example Code</h2>
 <p>Here’s a brief example of the code used to fetch and display weather data:</p>
 
 <pre>
 // script.js
-document.getElementById('fetchWeather').addEventListener('click', async () => {
-    const response = await fetch('/api/weather');
-    const weatherData = await response.json();
-    displayWeatherData(weatherData);
-    createChart(weatherData);
-});
-
 const displayWeatherData = (data) => {
     const weatherDiv = document.getElementById('weatherData');
     data.forEach(item => {
@@ -144,7 +123,7 @@ const displayWeatherData = (data) => {
 };
 </pre>
 
-<h2>Screenshots</h2>
+<h2>🖼️ Screenshots</h2>
 <table>
   <tr>
     <th>Weather Data Display</th>
@@ -156,12 +135,5 @@ const displayWeatherData = (data) => {
   </tr>
 </table>
 
-<h2>Future Improvements</h2>
-<ul>
-  <li>Add more weather parameters (e.g., humidity, wind speed).</li>
-  <li>Implement historical weather trend analysis.</li>
-  <li>Extend alerts to include email notifications.</li>
-</ul>
-
-<h2>License</h2>
+<h2>📜 License</h2>
 <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
